@@ -1,0 +1,185 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1671281970731881810
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1671281970731881812}
+  - component: {fileID: 1671281970731881813}
+  - component: {fileID: 219047198}
+  m_Layer: 0
+  m_Name: SpawnerManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1671281970731881812
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671281970731881810}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.434796, y: -0.014599498, z: 0.9608102}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1671281970731881813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671281970731881810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a89e0a9fcb26ac94bb407eaf4452a316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beginningOfWaveSound: {fileID: 8300000, guid: 1e7bd4ce3706cf148a9ab613605b4e3c, type: 3}
+  endOfWaveSound: {fileID: 8300000, guid: 5cc87f63fcf533146b8eb6a2b731149d, type: 3}
+  dogEntryRoundSound: {fileID: 8300000, guid: 242cb7311bc7ca943a27990e44c068a2, type: 3}
+  dogEndRoundSound: {fileID: 8300000, guid: 5756369b84530824193aa4eef7741c52, type: 3}
+  thisWave: 0
+  spawners:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  timeBetweenSpawns: 1
+  totalTimeForSpawning: 3
+  largestAmountOfZombiesInScene: 50
+  waveDisplayScript: {fileID: 0}
+  dogWave: 0
+  basicZombiePrefab: {fileID: 948677212438600981, guid: e9db853843aace2489beadb1434e11aa, type: 3}
+  coneZombiePrefab: {fileID: 7570920110630123214, guid: 0f6bf18278ba6144fbe4e215da603706, type: 3}
+  crawlerZombiePrefab: {fileID: 2966308217093881913, guid: abcfe5b17ea0f2640941bb13d49f8260, type: 3}
+  bomberZombiePrefab: {fileID: 7687245916836663591, guid: 9c5703e2293a85941bf9bdd7308753de, type: 3}
+  dogZombiePrefab: {fileID: 8389187158407147981, guid: baf48ca30d7771d48a95c74a1ef44ec4, type: 3}
+  acidicZombiePrefab: {fileID: 1059678511016387925, guid: 49fc2141b21bfe0429afff026458e75c, type: 3}
+  diggerZombiePrefab: {fileID: 7470379571650010052, guid: 090aa5d1538cfc64c8511c645092fd8b, type: 3}
+  smokerZombiePrefab: {fileID: 7600747344151829641, guid: 1edb25c56fe143c429bca9c3ad586935, type: 3}
+  grotesqueZombiePrefab: {fileID: 6365643938147548472, guid: 3e512c51d653c294e878299b0822b07d, type: 3}
+  tankZombiePrefab: {fileID: 6431933212536734940, guid: b1601048c7f530d46b3525adfbee6c82, type: 3}
+  ballZombiePrefab: {fileID: 3009412019595115109, guid: ca8c3b6a353e14b449953d5ca36106be, type: 3}
+  chanceOfSpawningBasicZombie: 10
+  chanceOfSpawningConeZombie: 10
+  chanceOfSpawningCrawlerZombie: 10
+  chanceOfSpawningBomberZombie: 10
+  chanceOfSpawningDogZombie: 10
+  chanceOfSpawningAcidicZombie: 10
+  chanceOfSpawningDiggerZombie: 10
+  chanceOfSpawningSmokerZombie: 10
+  chanceOfSpawningGrotesqueZombie: 10
+  chanceOfSpawningTankZombie: 10
+--- !u!82 &219047198
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671281970731881810}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

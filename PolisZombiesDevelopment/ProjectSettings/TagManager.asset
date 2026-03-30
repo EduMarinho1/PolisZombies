@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - ScrapWall
+  - Wall
+  - Water
+  - Window
+  - Zombie
+  - TeddyNoBox
+  - ZombieSounds
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Player
+  - Water
+  - UI
+  - Zombie
+  - Window
+  - Bullet
+  - Floor
+  - Walls
+  - Weapon
+  - DiggedZombie
+  - ExplosionBullet
+  - NoCollisions
+  - CollideWithZombieButNoReaction
+  - ShockZombie
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: BomberAcid
+    uniqueID: 353367367
+    locked: 0
+  - name: PurchasePoint
+    uniqueID: 1826166481
+    locked: 0
+  - name: Player
+    uniqueID: 2533064829
+    locked: 0
+  - name: Zombie
+    uniqueID: 3004326445
+    locked: 0
+  - name: Environment
+    uniqueID: 1548868991
+    locked: 0
+  - name: SlotBellowWeapon
+    uniqueID: 535116733
+    locked: 0
+  - name: Weapon
+    uniqueID: 1398291245
+    locked: 0
+  - name: AboveEnvironment
+    uniqueID: 2245452687
+    locked: 0
+  - name: Bullet
+    uniqueID: 2499446473
+    locked: 0
+  - name: BlackSquareToHide
+    uniqueID: 858270841
+    locked: 0
